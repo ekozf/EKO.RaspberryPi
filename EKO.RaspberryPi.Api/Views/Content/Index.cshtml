@@ -1,0 +1,31 @@
+﻿@using EKO.RaspberryPi.Api.Models
+@model ServerDetailsViewModel
+
+<h1 class="mb-5 px-5 mx-5">Hello, World!</h1>
+
+<article class="w-100 pb-5">
+    <section class="d-flex justify-content-between">
+        <span>Version:</span>
+        <span>@Model.Version</span>
+    </section>
+    <section class="d-flex justify-content-between">
+        <span>OS:</span>
+        <span>@Model.OS</span>
+    </section>
+    <section class="d-flex justify-content-between">
+        <span>Framework:</span>
+        <span>@Model.Framework</span>
+    </section>
+    <section class="d-flex justify-content-between">
+        <span>Timestamp:</span>
+        <span id="timestamp-field">@Model.Timestamp</span>
+    </section>
+    <section class="d-flex justify-content-between">
+        <span>Uptime:</span>
+        <span id="uptime-field">@Model.Uptime.ToString("h'h 'm'm 's's'")</span>
+    </section>
+</article>
+
+@section Scripts {
+    <script src="~/js/dist/keepUpdated.js" asp-append-version="true"></script>
+}
