@@ -1,4 +1,4 @@
-﻿namespace EKO.RaspberryPi.Api.Entities;
+﻿namespace EKO.RaspberryPi.Shared.ServerEntities;
 
 public record ServerDetails
 {

@@ -28,4 +28,10 @@
     <Folder Include="wwwroot\js\dist\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\EKO.RaspberryPi.AppLogic\EKO.RaspberryPi.AppLogic.csproj" />
+    <ProjectReference Include="..\EKO.RaspberryPi.Infrastructure\EKO.RaspberryPi.Infrastructure.csproj" />
+    <ProjectReference Include="..\EKO.RaspberryPi.Shared\EKO.RaspberryPi.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

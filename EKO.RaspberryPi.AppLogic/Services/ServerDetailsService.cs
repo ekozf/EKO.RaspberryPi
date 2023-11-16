@@ -1,10 +1,10 @@
-﻿using EKO.RaspberryPi.Api.Entities;
-using EKO.RaspberryPi.Api.Services.Contracts;
+﻿using EKO.RaspberryPi.AppLogic.Services.Contracts;
+using EKO.RaspberryPi.Shared.ServerEntities;
 using System.Diagnostics;
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-namespace EKO.RaspberryPi.Api.Services;
+namespace EKO.RaspberryPi.AppLogic;
 
 public class ServerDetailsService : IServerDetailsService
 {

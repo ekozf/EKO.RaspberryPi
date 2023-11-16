@@ -1,5 +1,6 @@
-using EKO.RaspberryPi.Api.Services;
-using EKO.RaspberryPi.Api.Services.Contracts;
+using EKO.RaspberryPi.AppLogic;
+using EKO.RaspberryPi.AppLogic.Services;
+using EKO.RaspberryPi.AppLogic.Services.Contracts;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddControllers();
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddSingleton<IServerDetailsService, ServerDetailsService>();
+builder.Services.AddSingleton<IArticleHandler, ArticleHandler>();
 
 var app = builder.Build();
 

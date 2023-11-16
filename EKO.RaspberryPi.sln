@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34219.65
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EKO.RaspberryPi.Api", "EKO.RaspberryPi.Api\EKO.RaspberryPi.Api.csproj", "{1C82C258-AC1C-4A92-BF9D-388672A6191D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EKO.RaspberryPi.Api", "EKO.RaspberryPi.Api\EKO.RaspberryPi.Api.csproj", "{1C82C258-AC1C-4A92-BF9D-388672A6191D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{C677169B-D96B-4E37-9B62-DAB221CFD1C0} = {C677169B-D96B-4E37-9B62-DAB221CFD1C0}
+		{F1C8FF53-1051-4D03-B010-B46684170A9A} = {F1C8FF53-1051-4D03-B010-B46684170A9A}
+		{FCFE5931-D482-438B-AFB8-9F0FB0366207} = {FCFE5931-D482-438B-AFB8-9F0FB0366207}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EKO.RaspberryPi.Shared", "EKO.RaspberryPi.Shared\EKO.RaspberryPi.Shared.csproj", "{FCFE5931-D482-438B-AFB8-9F0FB0366207}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EKO.RaspberryPi.Infrastructure", "EKO.RaspberryPi.Infrastructure\EKO.RaspberryPi.Infrastructure.csproj", "{F1C8FF53-1051-4D03-B010-B46684170A9A}"
+	ProjectSection(ProjectDependencies) = postProject
+		{FCFE5931-D482-438B-AFB8-9F0FB0366207} = {FCFE5931-D482-438B-AFB8-9F0FB0366207}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EKO.RaspberryPi.AppLogic", "EKO.RaspberryPi.AppLogic\EKO.RaspberryPi.AppLogic.csproj", "{C677169B-D96B-4E37-9B62-DAB221CFD1C0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F1C8FF53-1051-4D03-B010-B46684170A9A} = {F1C8FF53-1051-4D03-B010-B46684170A9A}
+		{FCFE5931-D482-438B-AFB8-9F0FB0366207} = {FCFE5931-D482-438B-AFB8-9F0FB0366207}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +33,18 @@ Global
 		{1C82C258-AC1C-4A92-BF9D-388672A6191D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C82C258-AC1C-4A92-BF9D-388672A6191D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C82C258-AC1C-4A92-BF9D-388672A6191D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCFE5931-D482-438B-AFB8-9F0FB0366207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCFE5931-D482-438B-AFB8-9F0FB0366207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCFE5931-D482-438B-AFB8-9F0FB0366207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCFE5931-D482-438B-AFB8-9F0FB0366207}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C8FF53-1051-4D03-B010-B46684170A9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C8FF53-1051-4D03-B010-B46684170A9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C8FF53-1051-4D03-B010-B46684170A9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C8FF53-1051-4D03-B010-B46684170A9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C677169B-D96B-4E37-9B62-DAB221CFD1C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C677169B-D96B-4E37-9B62-DAB221CFD1C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C677169B-D96B-4E37-9B62-DAB221CFD1C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C677169B-D96B-4E37-9B62-DAB221CFD1C0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,5 +1,5 @@
-﻿using EKO.RaspberryPi.Api.Entities;
-using EKO.RaspberryPi.Api.Models;
+﻿using EKO.RaspberryPi.Api.Models;
+using EKO.RaspberryPi.Shared.ServerEntities;
 
 namespace EKO.RaspberryPi.Api.Extensions;
 

@@ -1,4 +1,4 @@
-﻿using EKO.RaspberryPi.Api.Entities;
+﻿using EKO.RaspberryPi.Shared.ServerEntities;
 
 namespace EKO.RaspberryPi.Api.Models;
 

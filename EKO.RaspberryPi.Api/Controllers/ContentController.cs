@@ -1,5 +1,5 @@
 ﻿using EKO.RaspberryPi.Api.Extensions;
-using EKO.RaspberryPi.Api.Services.Contracts;
+using EKO.RaspberryPi.AppLogic.Services.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EKO.RaspberryPi.Api.Controllers;
